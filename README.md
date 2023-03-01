@@ -21,6 +21,6 @@ This project was built with
 
 Megan Le - meganle414@gmail.com
 
-Project Link: [https://github.com/meganle414/Fetch-Rewards-Frontend](https://github.com/meganle414/Fetch-Rewards-Frontend)
+Project Link: [https://github.com/meganle414/Personal-Website](https://github.com/meganle414/Personal-Website)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
