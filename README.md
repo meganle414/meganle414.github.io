@@ -1,1 +1,26 @@
-# Personal-Website
+# Personal Website
+
+![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/website-screenshot.png?raw=true)
+![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/website-screenshot-2.png?raw=true)
+
+This project was created to showcase my Frontend skills.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+This project was built with
+
+* JavaScript
+* HTML
+* CSS
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Contact
+
+Megan Le - meganle414@gmail.com
+
+Project Link: [https://github.com/meganle414/Fetch-Rewards-Frontend](https://github.com/meganle414/Fetch-Rewards-Frontend)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
