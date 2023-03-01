@@ -11,7 +11,6 @@ This project was created to showcase my Frontend skills.
 
 This project was built with
 
-* JavaScript
 * HTML
 * CSS
 
