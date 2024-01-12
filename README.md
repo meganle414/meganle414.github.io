@@ -1,5 +1,6 @@
 # Personal Website
 
+Accessable at https://meganle414.github.io/
 ![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/website-screenshot.png?raw=true)
 ![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/website-screenshot-2.png?raw=true)
 
