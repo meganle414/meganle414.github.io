@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" charset="utf-8" content="with=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section class="header">
+      <a name="top"></a>
+      <nav>
+        <a href="homepage.html"><img class="circle-image" src="images/me.jfif" height="150" width="150"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()" ></i>
+          <ul>
+            <li><a href="" onclick=home()>Home</a></li>
+            <li><a href="" onclick=resume() >Resume</a></li>
+            <li><a href="" onclick=github() >Projects</a></li>
+            <li><a href="" onclick=contact() >Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+    <section class="body">
+        <link href="contact-form.css" rel="stylesheet">
+
+        <div class="fcf-body">
+        
+            <div id="fcf-form">
+            <h3 class="fcf-h3">Contact us</h3>
+        
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                
+                <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Your name</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                    <div class="fcf-input-group">
+                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                </div>
+        
+                <div class="fcf-credit" id="fcf-credit">
+                Simple HTML email form provided by <a href="https://www.majesticform.com" target="_blank">MajesticForm</a>
+                </div>
+        
+            </form>
+            </div>
+        
+        </div>
+    </section>
+    <script>
+      function showMenu() {
+        document.getElementById("navLinks").style.right = 0;
+      }
+
+      function hideMenu() {
+        document.getElementById("navLinks").style.right = "-200px";
+      }
+
+      function linkedin() {
+        window.open('https://www.linkedin.com/in/meganle414/','_blank')
+      }
+
+      function github() {
+        window.open('https://github.com/meganle414','_blank')
+      }
+
+      function resume() {
+        window.open('https://docs.google.com/document/d/1N_a0BnvtWulN9gXB9RssG_yFH-nFrh3043g6GXzb_zk/edit?usp=sharing','_blank')
+      }
+
+      function home() {
+        window.open('..')
+      }
+
+      function contact() {
+        window.open('.')
+      }
+
+      
+
+    </script>
+  </body>
+</html>
