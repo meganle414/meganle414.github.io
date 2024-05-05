@@ -13,7 +13,7 @@
     <section class="header">
       <a name="top"></a>
       <nav>
-        <a href="homepage.html"><img class="circle-image" src="images/logo.png" height="150" width="150"></a>
+        <a href="homepage.html"><img class="circle-image" src="images/me.jfif" height="150" width="150"></a>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
@@ -36,6 +36,27 @@
       <h1>Latest Projects</h1>
       <a href="" onclick="window.open('https://github.com/meganle414','_blank')" class="hero-btn">GitHub</a>
       <p>Here are some of the projects I have done!</p>
+      <div class="row">
+        <div class="project-col">
+          <h3>Amazon Price Calculator</h3>
+          <img class='project-image' src="images/amazon-price-calculator.png" height="250" width="250">
+          <p>A Chrome extension to calculate total price and item count in Amazon shopping lists.</p>
+          <a href="" onclick="window.open('https://github.com/meganle414/amazon-price-calculator','_blank')" class="hero-btn">Learn More</a>
+          </div>
+        <div class="project-col">
+          <h3>Food Tracker</h3>
+          <img class='project-image' src="images/light_mode.png" height="250" width="250">
+          <p>Food tracking mobile app using React Native to track nutritional values (calories, protein, fat, and carbs).
+          </p>
+          <a href="" onclick="window.open('https://github.com/meganle414/food-tracker','_blank')" class="hero-btn">Learn More</a>
+        </div>
+        <div class="project-col">
+          <h3>Website</h3>
+          <img class='project-image' src="images/website-screenshot.png" height="250" width="250">
+          <p>My portfolio website to display my projects and contact information.</p>
+          <a href="" onclick="window.open('https://github.com/meganle414/meganle414.github.io','_blank')" class="hero-btn">Learn More</a>
+        </div>
+      </div>
       <div class="row">
         <div class="project-col">
           <h3>League Bot</h3>
@@ -62,7 +83,7 @@
     </section>
     <script>
       function showMenu() {
-        document.getElementById("navLinks").style.right = "0";
+        document.getElementById("navLinks").style.right = 0;
       }
 
       function hideMenu() {
