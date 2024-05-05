@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" charset="utf-8" content="with=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section class="header">
+      <a name="top"></a>
+      <nav>
+        <a href="homepage.html"><img class="circle-image" src="images/me.jfif" height="150" width="150"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="" onclick="window.open('https://docs.google.com/document/d/1ZrK6IfYuoVugIoEeewBCMcYERuwwlio8QfVPn5Zdy7k/edit?usp=sharing','_blank')">Resume</a></li>
+            <li><a href="" onclick="window.open('https://github.com/meganle414','_blank')">Projects</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Megan Le</h1>
+        <p>B.S. in Computer Science from the University of Wisconsin - Madison</p>
+        <a href="" onclick="window.open('https://www.linkedin.com/in/meganle414/','_blank')" class="hero-btn">LinkedIn</a>
+        <a href="" onclick="window.open('https://docs.google.com/document/d/1ZrK6IfYuoVugIoEeewBCMcYERuwwlio8QfVPn5Zdy7k/edit?usp=sharing','_blank')" class="hero-btn">Resume</a>
+        <a href="" onclick="window.open('https://github.com/meganle414','_blank')" class="hero-btn">GitHub</a>
+      </div>
+    </section>
+    <section class="body">
+      <h1>Latest Projects</h1>
+      <a href="" onclick="window.open('https://github.com/meganle414','_blank')" class="hero-btn">GitHub</a>
+      <p>Here are some of the projects I have done!</p>
+      <div class="row">
+        <div class="project-col">
+          <h3>Amazon Price Calculator</h3>
+          <img class='project-image' src="images/amazon-price-calculator.png" height="250" width="250">
+          <p>A Chrome extension to calculate total price and item count in Amazon shopping lists.</p>
+          <a href="" onclick="window.open('https://github.com/meganle414/amazon-price-calculator','_blank')" class="hero-btn">Learn More</a>
+          </div>
+        <div class="project-col">
+          <h3>Food Tracker</h3>
+          <img class='project-image' src="images/light_mode.png" height="250" width="250">
+          <p>Food tracking mobile app using React Native to track nutritional values (calories, protein, fat, and carbs).
+          </p>
+          <a href="" onclick="window.open('https://github.com/meganle414/food-tracker','_blank')" class="hero-btn">Learn More</a>
+        </div>
+        <div class="project-col">
+          <h3>Website</h3>
+          <img class='project-image' src="images/website-screenshot.png" height="250" width="250">
+          <p>My portfolio website to display my projects and contact information.</p>
+          <a href="" onclick="window.open('https://github.com/meganle414/meganle414.github.io','_blank')" class="hero-btn">Learn More</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="project-col">
+          <h3>League Bot</h3>
+          <img class='project-image' src="images/league-bot.png" height="250" width="250">
+          <p>A Discord command-friendly Python program using Selenium and BeautifulSoup to web 
+            scrape and parse information from a League of Legends champions (characters) tier list on u.gg.</p>
+          <a href="" onclick="window.open('https://github.com/meganle414/League-Bot','_blank')" class="hero-btn">Learn More</a>
+          </div>
+        <div class="project-col">
+          <h3>Lexicographic Static Text Analysis</h3>
+          <img class='project-image' src="images/bag-of-letters.png" height="250" width="250">
+          <p>A Python program that approximates how many bags of letters it would take to write out 
+            the alphabetic characters of a text file, in this case the Bee Movie Script, given letters in 1 bag.
+          </p>
+          <a href="" onclick="window.open('https://github.com/meganle414/How-Many-Spaghettios-Cans','_blank')" class="hero-btn">Learn More</a>
+        </div>
+        <div class="project-col">
+          <h3>8-piece Puzzle</h3>
+          <img class='project-image' src="images/8-piece-tiles-puzzle.png" height="250" width="250">
+          <p>A Python program that utilizes an A* search algorithm to solve an 8 sliding tiles puzzle.</p>
+          <a href="" onclick="window.open('https://github.com/meganle414/8-piece-Puzzle','_blank')" class="hero-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <script>
+      function showMenu() {
+        document.getElementById("navLinks").style.right = 0;
+      }
+
+      function hideMenu() {
+        document.getElementById("navLinks").style.right = "-200px";
+      }
+
+      function linkedin() {
+
+      }
+
+      function github() {
+
+      }
+
+      function resume() {
+        
+      }
+
+      
+
+    </script>
+  </body>
+</html>
