@@ -15,11 +15,11 @@
       <nav>
         <a href="homepage.html"><img class="circle-image" src="images/me.jfif" height="150" width="150"></a>
         <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <i class="fa fa-times" onclick="hideMenu()" ></i>
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="" onclick=resume() >Resume</a></li>
-            <li><a href="" onclick="window.open('https://github.com/meganle414','_blank')">Projects</a></li>
+            <li><a href="" onclick=github() >Projects</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -29,7 +29,7 @@
         <p>B.S. in Computer Science from the University of Wisconsin - Madison</p>
         <a href="" onclick=linkedin() class="hero-btn">LinkedIn</a>
         <a href="" onclick=resume() class="hero-btn">Resume</a>
-        <a href="" onclick="window.open('https://github.com/meganle414','_blank')" class="hero-btn">GitHub</a>
+        <a href="" onclick=github() class="hero-btn">GitHub</a>
       </div>
     </section>
     <section class="body">
@@ -95,7 +95,7 @@
       }
 
       function github() {
-
+        window.open('https://github.com/meganle414','_blank')
       }
 
       function resume() {
