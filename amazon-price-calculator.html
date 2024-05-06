@@ -18,8 +18,8 @@
           <i class="fa fa-times" onclick="hideMenu()" ></i>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="https://www.linkedin.com/in/meganle414/" onclick=resume()>Resume</a></li>
-            <li><a href="https://github.com/meganle414" onclick=github()>GitHub</a></li>
+            <li><a href="" onclick=resume()>Resume</a></li>
+            <li><a href="" onclick=github()>GitHub</a></li>
             <li><a href="amazon-price-calculator.html">Amazon Price Calculator</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -27,15 +27,12 @@
         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
       <div class="text-box">
-        <h1>Contact Me</h1>
-        <p>LinkedIn: @meganle414</p>
-        <p>GitHub: @meganle414</p>
-        <p>Email: meganle414@gmail.com</p>
-        <a href="" onclick=linkedin() class="hero-btn">LinkedIn</a>
-        <a href="" onclick=resume() class="hero-btn">Resume</a>
-        <a href="" onclick=github() class="hero-btn">GitHub</a>
-        <a href="amazon-price-calculator.html" class="hero-btn">Amazon Price Calculator</a>
-        <a href="mailto: meganle414@gmail.com" class="hero-btn">Email</a>
+        <h1>Amazon Price Calculator</h1>
+        <p>Paste Amazon list link here to get total item count and total price</p>
+        <input type="url" id="link"><br><br><br>
+        <button onclick="calculate(document.getElementById('link').value)" class="hero-btn">Calculate</button>
+        <div class="item-count-container" id="item-count-container"></div>
+        <div class="total-price-container" id="total-price-container"></div>
       </div>
     </section>
     <section class="body">
@@ -60,6 +57,45 @@
 
       function resume() {
         window.open('https://docs.google.com/document/d/1N_a0BnvtWulN9gXB9RssG_yFH-nFrh3043g6GXzb_zk/edit?usp=sharing','_blank')
+      }
+      
+      const puppeteer = require('puppeteer');
+      const cheerio = require('cheerio');
+
+      async function calculate(url) {
+        //   const url = 'https://www.amazon.com/hz/wishlist/ls/1YWPWG9NHD4RP?ref_=wl_share';
+
+        // launch the browser
+        const browser = await puppeteer.launch();
+        const page = await browser.newPage();
+
+        await page.goto(url);
+
+        // initialize the array and variable for item prices
+        let prices = [];
+        let totalPrice = 0;
+
+        // get the HTML content
+        const html = await page.content();
+
+        // parse the HTML using cheerio
+        const $ = cheerio.load(html);
+
+        $('span.a-price').each((index, element) => {
+            const priceText = $(element).find('span').first().text().replace('$', '');
+            prices.push(parseFloat(priceText));
+        });
+
+        totalPrice = prices.reduce((acc, current) => acc + current, 0);
+
+        console.log(`Count: ${prices.length}`);
+        console.log(`Total Price: $${totalPrice.toFixed(2)}`);
+
+        document.getElementById("item-count-container").innerHTML = `Count: ${prices.length}`;
+        document.getElementById("total-price-container").innerHTML = `Total Price: $${totalPrice.toFixed(2)}`;
+
+        // close the browser
+        await browser.close();
       }
 
     </script>
