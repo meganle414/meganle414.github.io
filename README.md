@@ -4,7 +4,7 @@ Accessible at https://meganle414.github.io/
 
 ![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/website-screenshot.png?raw=true)
 
-This project was created to showcase my Frontend skills.
+This project was created to showcase my Frontend skills and act as a portfolio for my projects.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
