@@ -231,6 +231,10 @@ h3 {
     transform: scale(1.05);
 }
 
+input[type=url] {
+    width: 45%;
+}
+
 #link {
     width: 45%;
 }
