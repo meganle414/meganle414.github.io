@@ -58,7 +58,7 @@ nav img {
     content: '';
     height: 5px;
     width: 0%;
-    background: #040404;
+    background: #e6e6e6;
     display: block;
     margin: auto;
     transition: 0.25s;
