@@ -35,13 +35,17 @@
         <p>Note: My Node.js server server must be running for this calculate function to work properly.</p>
         <p>Please message me to turn it on if you'd like to use this function!</p>
         <input type="url" id="link"><br><br><br>
-        <button onclick="calculate(document.getElementById('link').value)" class="hero-btn">Calculate</button><br><br><br>
+        <button onclick=tutorial() class="hero-btn">Tutorial</button><button onclick="calculate(document.getElementById('link').value)" class="hero-btn">Calculate</button><br><br><br>
         <div class="item-count-container" id="item-count-container"></div>
         <div class="total-price-container" id="total-price-container"></div>
       </div>
     </section>
-    <section class="body">
-      
+    <section class="body" id="tutorial">
+      <div class="text-box">
+        <video controls>
+          <source src="" type="video/mp4">
+        </video>
+      </div>
     </section>
     <script>
       function showMenu() {
@@ -64,7 +68,10 @@
         window.open('https://docs.google.com/document/d/1N_a0BnvtWulN9gXB9RssG_yFH-nFrh3043g6GXzb_zk/edit?usp=sharing','_blank')
       }
 
-      
+      function tutorial() {
+        document.getElementById('tutorial').scrollIntoView()
+      }
+
       async function calculate(url) {
         try {
             const response = await fetch('http://localhost:3000/calculate', {
