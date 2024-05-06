@@ -32,6 +32,7 @@
       <div class="text-box">
         <h1>Amazon Price Calculator</h1>
         <p>Paste Amazon list link here to get total item count and total price</p>
+        <p>Note: My Node.js server server must be running for this calculate function to work properly.</p>
         <input type="url" id="link"><br><br><br>
         <button onclick="calculate(document.getElementById('link').value)" class="hero-btn">Calculate</button><br><br><br>
         <div class="item-count-container" id="item-count-container"></div>
@@ -65,8 +66,6 @@
       
       async function calculate(url) {
         try {
-          document.getElementById("item-count-container").innerHTML = 'Note: my Node.js server server must be running for this calculate function to work properly.';
-
             const response = await fetch('http://localhost:3000/calculate', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
