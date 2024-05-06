@@ -64,16 +64,24 @@
 
       
       async function calculate(url) {
-        const response = await fetch('/calculate', {
+        try {
+            const response = await fetch('/calculate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),
         });
 
+        if (!response.ok) {
+            throw new Error(`Failed to calculate price: ${response.status}`);
+        }
+
         const result = await response.json();
 
         document.getElementById("item-count-container").innerHTML = `Count: ${result.itemCount}`;
         document.getElementById("total-price-container").innerHTML = `Total Price: $${result.totalPrice}`;
+        } catch (error) {
+            console.error(error);
+        }
       }
 
     //   async function calculate(url) {
