@@ -22,7 +22,7 @@ This project was built with
 
 Paste Amazon list link here to get total item count and total price
 ![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/calculator.png?raw=true)
-![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/amazon-price-calculator.png?raw=true)
+![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/amazon-price-calculator-list.png?raw=true)
 
 Node.js server is run using
 ```node api.js```
