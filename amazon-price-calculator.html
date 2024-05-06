@@ -65,6 +65,8 @@
       
       async function calculate(url) {
         try {
+          document.getElementById("item-count-container").innerHTML = 'Note: my Node.js server server must be running for this calculate function to work properly.';
+
             const response = await fetch('http://localhost:3000/calculate', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
