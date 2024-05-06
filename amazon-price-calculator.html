@@ -33,7 +33,7 @@
         <h1>Amazon Price Calculator</h1>
         <p>Paste Amazon list link here to get total item count and total price</p>
         <input type="url" id="link"><br><br><br>
-        <button onclick="calculate(document.getElementById('link').value)" class="hero-btn">Calculate</button>
+        <button onclick="calculate(document.getElementById('link').value)" class="hero-btn">Calculate</button><br><br><br>
         <div class="item-count-container" id="item-count-container"></div>
         <div class="total-price-container" id="total-price-container"></div>
       </div>
@@ -79,50 +79,11 @@
 
         document.getElementById("item-count-container").innerHTML = `Count: ${result.itemCount}`;
         document.getElementById("total-price-container").innerHTML = `Total Price: $${result.totalPrice}`;
+
         } catch (error) {
             console.error(error);
         }
       }
-
-    //   async function calculate(url) {
-    //     //   const url = 'https://www.amazon.com/hz/wishlist/ls/1YWPWG9NHD4RP?ref_=wl_share';
-
-    //     // launch the browser
-    //     const browser = await puppeteer.launch();
-    //     // const browser = await puppeteer.connect({
-    //     //     browserWSEndpoint: `ws://0.0.0.0:8080`, // <-- connect to a server running somewhere
-    //     //     ignoreHTTPSErrors: true
-    //     // });
-    //     const page = await browser.newPage();
-
-    //     await page.goto(url);
-
-    //     // initialize the array and variable for item prices
-    //     let prices = [];
-    //     let totalPrice = 0;
-
-    //     // get the HTML content
-    //     const html = await page.content();
-
-    //     // parse the HTML using cheerio
-    //     const $ = cheerio.load(html);
-
-    //     $('span.a-price').each((index, element) => {
-    //         const priceText = $(element).find('span').first().text().replace('$', '');
-    //         prices.push(parseFloat(priceText));
-    //     });
-
-    //     totalPrice = prices.reduce((acc, current) => acc + current, 0);
-
-    //     console.log(`Count: ${prices.length}`);
-    //     console.log(`Total Price: $${totalPrice.toFixed(2)}`);
-
-    //     document.getElementById("item-count-container").innerHTML = `Count: ${prices.length}`;
-    //     document.getElementById("total-price-container").innerHTML = `Total Price: $${totalPrice.toFixed(2)}`;
-
-    //     // close the browser
-    //     await browser.close();
-    //   }
 
     </script>
   </body>
