@@ -83,8 +83,8 @@
 
       async function calculate(url) {
         try {
-          document.getElementById("item-count-container").innerHTML = 'Calculating...';
-          document.getElementById("total-price-container").innerHTML = 'Thank you for your patience';
+            document.getElementById("item-count-container").innerHTML = 'Calculating...';
+            document.getElementById("total-price-container").innerHTML = 'Thank you for your patience';
             const response = await fetch('http://localhost:3000/calculate', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
