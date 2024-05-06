@@ -88,6 +88,12 @@ nav img {
     color: #e6e6e6;
 }
 
+#tutorial p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #e6e6e6;
+}
+
 .hero-btn {
     display: inline-block;
     text-decoration: none;
