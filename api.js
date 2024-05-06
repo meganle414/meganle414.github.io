@@ -31,7 +31,9 @@ app.post('/calculate', async (req, res) => {
     totalPrice: totalPrice.toFixed(2),
   };
 
+  console.log('Sending response:', result);
   res.json(result);
+  console.log('Response sent');
 });
 
 app.listen(3000, () => {
