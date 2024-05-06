@@ -66,11 +66,11 @@
         //   const url = 'https://www.amazon.com/hz/wishlist/ls/1YWPWG9NHD4RP?ref_=wl_share';
 
         // launch the browser
-        // const browser = await puppeteer.launch();
-        const browser = await puppeteer.connect({
-            browserWSEndpoint: `ws://0.0.0.0:8080`, // <-- connect to a server running somewhere
-            ignoreHTTPSErrors: true
-        });
+        const browser = await puppeteer.launch();
+        // const browser = await puppeteer.connect({
+        //     browserWSEndpoint: `ws://0.0.0.0:8080`, // <-- connect to a server running somewhere
+        //     ignoreHTTPSErrors: true
+        // });
         const page = await browser.newPage();
 
         await page.goto(url);
