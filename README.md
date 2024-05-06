@@ -20,8 +20,8 @@ This project was built with
 
 ### Amazon Price Calculator
 
-Paste Amazon list link here to get total item count and total price
-[![Video](https://github.com/meganle414/Personal-Website/blob/main/images/calculator.png?raw=true)](https://github.com/meganle414/Personal-Website/blob/main/videos/calculator_tutorial.mp4)
+Paste Amazon list link here to get total item count and total price<br>
+[Video Tutorial](https://github.com/meganle414/meganle414.github.io/assets/66089268/2e6779cf-e906-4795-a20e-e4d5d5cecb3d)
 ![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/calculator.png?raw=true)
 ![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/amazon-price-calculator-list.png?raw=true)
 
