@@ -25,39 +25,19 @@
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
-      <link href="contact-form.css" rel="stylesheet">
-        <div class="fcf-body">
-            <div id="fcf-form">
-            <h3 class="fcf-h3">Contact me</h3>
-            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-                <div class="fcf-form-group">
-                    <label for="Name" class="fcf-label">Your name</label>
-                    <div class="fcf-input-group">
-                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                    </div>
-                </div>
-                <div class="fcf-form-group">
-                    <label for="Email" class="fcf-label">Your email address</label>
-                    <div class="fcf-input-group">
-                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                    </div>
-                </div>
-                <div class="fcf-form-group">
-                    <label for="Message" class="fcf-label">Your message</label>
-                    <div class="fcf-input-group">
-                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                    </div>
-                </div>
-                <div class="fcf-form-group">
-                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-                </div>
-            </form>
-            </div>
-        
-        </div>
+      <div class="text-box">
+        <h1>Contact Me</h1>
+        <p onclick=linkedin()>LinkedIn: @meganle414</p>
+        <p onclick=github()>GitHub: @meganle414</p>
+        <p>Email: meganle414@gmail.com</p>
+        <a href="" onclick=linkedin() class="hero-btn">LinkedIn</a>
+        <a href="" onclick=resume() class="hero-btn">Resume</a>
+        <a href="" onclick=github() class="hero-btn">GitHub</a>
+        <a href="mailto: meganle414@gmail.com" class="hero-btn">Email</a>
+      </div>
     </section>
     <section class="body">
-        
+      
     </section>
     <script>
       function showMenu() {
@@ -83,12 +63,6 @@
       function home() {
         window.open('..','_self')
       }
-
-      // function contact() {
-      //   window.open('.')
-      // }
-
-      
 
     </script>
   </body>
