@@ -21,12 +21,13 @@ This project was built with
 ### Amazon Price Calculator
 
 Paste Amazon list link here to get total item count and total price
+[![Video](https://github.com/meganle414/Personal-Website/blob/main/images/calculator.png?raw=true)](https://github.com/meganle414/Personal-Website/blob/main/videos/calculator_tutorial.mp4)
 ![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/calculator.png?raw=true)
 ![Screenshot](https://github.com/meganle414/Personal-Website/blob/main/images/amazon-price-calculator-list.png?raw=true)
 
 Node.js server is run using
 ```node api.js```
-which returns a response to the website with the total item count and total price of all the items in the list
+which returns a JSON response to the website with the total item count and total price of all the items in the list
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
