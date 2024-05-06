@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="bundle.js"></script>
+    <script src="puppeteer_browserify.js"></script>
   </head>
   <body>
     <section class="header">
@@ -58,9 +60,6 @@
       function resume() {
         window.open('https://docs.google.com/document/d/1N_a0BnvtWulN9gXB9RssG_yFH-nFrh3043g6GXzb_zk/edit?usp=sharing','_blank')
       }
-      
-      const puppeteer = require('puppeteer');
-      const cheerio = require('cheerio');
 
       async function calculate(url) {
         //   const url = 'https://www.amazon.com/hz/wishlist/ls/1YWPWG9NHD4RP?ref_=wl_share';

@@ -1,9 +1,7 @@
 const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
 
-async function main() {
-  const url = 'https://www.amazon.com/hz/wishlist/ls/1YWPWG9NHD4RP?ref_=wl_share';
-
+async function main(url) {
   // launch the browser
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
@@ -29,6 +27,9 @@ async function main() {
 
   console.log(`Count: ${prices.length}`);
   console.log(`Total Price: $${totalPrice.toFixed(2)}`);
+
+  document.getElementById("item-count-container").innerHTML = `Count: ${prices.length}`;
+  document.getElementById("total-price-container").innerHTML = `Total Price: $${totalPrice.toFixed(2)}`;
 
   // close the browser
   await browser.close();
