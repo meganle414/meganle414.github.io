@@ -22,7 +22,7 @@ Accessible at https://meganle414.github.io/
 
 This project was created to showcase my Frontend skills and act as a portfolio for my projects.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#Personal Website">back to top</a>)</p>
 
 ### Built With
 
@@ -32,7 +32,7 @@ This project was built with
 * HTML
 * CSS
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#Personal Website">back to top</a>)</p>
 
 ### Amazon Price Calculator
 
@@ -45,7 +45,7 @@ Node.js server is run using
 ```node api.js```
 which returns a JSON response to the website with the total item count and total price of all the items in the list
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#Personal Website">back to top</a>)</p>
 
 ### Contact
 
@@ -53,4 +53,4 @@ Megan Le - meganle414@gmail.com
 
 Project Link: [https://github.com/meganle414/Personal-Website](https://github.com/meganle414/Personal-Website)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#Personal Website">back to top</a>)</p>
