@@ -22,7 +22,7 @@ Accessible at https://meganle414.github.io/
 
 This project was created to showcase my Frontend skills and act as a portfolio for my projects.
 
-<p align="right">(<a href="#Personal Website">back to top</a>)</p>
+<p align="right">(<a href="# Personal Website">back to top</a>)</p>
 
 ### Built With
 
