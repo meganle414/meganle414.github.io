@@ -28,7 +28,7 @@ This project was created to showcase my Frontend skills and act as a portfolio f
 
 This project was built with
 
-* JavaSCript
+* JavaScript
 * HTML
 * CSS
 
