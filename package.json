@@ -1,0 +1,23 @@
+{
+  "name": "meganle414.github.io",
+  "version": "1.0.0",
+  "description": "<details open=\"open\">\r   <summary><h2 style=\"display: inline-block\">Table of Contents</h2></summary>\r   <ol>\r     <li>\r       <a href=\"#about-the-project\">About The Project</a>\r       <ul>\r         <li><a href=\"#built-with\">Built With</a></li>\r       </ul>\r     </li>\r     <li><a href=\"#amazon-price-calculator\">Amazon Price Calculator</a></li>\r     <li><a href=\"#contact\">Contact</a></li>\r   </ol>\r </details>",
+  "main": "api.js",
+  "scripts": {
+    "start": "nodemon api.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meganle414/meganle414.github.io.git"
+  },
+  "author": "Megan Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meganle414/meganle414.github.io/issues"
+  },
+  "homepage": "https://github.com/meganle414/meganle414.github.io#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}
