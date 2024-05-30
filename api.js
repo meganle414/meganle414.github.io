@@ -33,7 +33,7 @@ app.post('/calculate', async (req, res) => {
           executablePath: '/app/.apt/usr/bin/google-chrome',
           args: ['--no-sandbox', '--disable-setuid-sandbox'],
           headless: true,
-          chrome_revision: '125.0.6422.112', // specify the Chrome version
+          chrome_revision: '125.0.6422.141', // specify the Chrome version
         });
         const page = await browser.newPage();
         await page.goto(url);
