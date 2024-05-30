@@ -19,5 +19,8 @@
   "homepage": "https://github.com/meganle414/meganle414.github.io#readme",
   "devDependencies": {
     "nodemon": "^3.1.2"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }
