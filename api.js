@@ -3,6 +3,7 @@ const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -15,7 +16,13 @@ app.use((req, res, next) => {
 app.post('/calculate', async (req, res) => {
     try {
         const url = req.body.url;
-        const browser = await puppeteer.launch();
+        // const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({
+          executablePath: '/app/.apt/usr/bin/google-chrome',
+          args: ['--no-sandbox', '--disable-setuid-sandbox'],
+          headless: true,
+          chrome_revision: '125.0.6422.112', // specify the Chrome version
+        });
         const page = await browser.newPage();
         await page.goto(url);
 
@@ -51,6 +58,6 @@ app.post('/calculate', async (req, res) => {
       }
 });
 
-app.listen(3000, () => {
-  console.log('Server listening on port 3000');
+app.listen(port, () => {
+  console.log('Server listening on port ${port}');
 });
