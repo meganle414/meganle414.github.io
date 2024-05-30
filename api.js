@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors')
 const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
 
@@ -8,12 +9,19 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-  });
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+app.use(cors({
+  origin: ['https://meganle414.github.io'],
+  credentials: true,
+}));
 
 app.post('/calculate', async (req, res) => {
+  const prices = [];
+  const totalPrice = 0;
     try {
         const url = req.body.url;
         // const browser = await puppeteer.launch();
@@ -26,9 +34,11 @@ app.post('/calculate', async (req, res) => {
         const page = await browser.newPage();
         await page.goto(url);
 
+        await autoScroll(page);
+
         // initialize the array and variable for item prices
-        let prices = [];
-        let totalPrice = 0;
+        // let prices = [];
+        // let totalPrice = 0;
 
         // get the HTML content
         const html = await page.content();
@@ -61,3 +71,22 @@ app.post('/calculate', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
+async function autoScroll(page){
+  await page.evaluate(async () => {
+      await new Promise((resolve) => {
+          var totalHeight = 0;
+          var distance = 100;
+          var timer = setInterval(() => {
+              var scrollHeight = document.body.scrollHeight;
+              window.scrollBy(0, distance);
+              totalHeight += distance;
+
+              if(totalHeight >= scrollHeight - window.innerHeight){
+                  clearInterval(timer);
+                  resolve();
+              }
+          }, 100);
+      });
+  });
+}
